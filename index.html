@@ -91,11 +91,12 @@
             });
             var popupContent = '<table>\
                     <tr>\
-                        <td colspan=2>' + (feature.properties['Universitas lampung'] !== null ? autolinker.link(feature.properties['Universitas Lampung'].toLocaleString()) : '') + '</td>\
+                        <th scope="row">Universitas Lampung</th>\
+                        <td>' + (feature.properties['Universitas Lampung'] !== null ? autolinker.link(feature.properties['Universitas Lampung'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
                         <th scope="row">Gambar</th>\
-                        <td colspan=2>' + (feature.properties['Gambar'] !== null ? '<img style = "height : 300px; width : 300px"  src="images/' + String(feature.properties['Gambar']).replace(/[\\\/:]/g, '_').trim() + '">' : '') + '</td>\
+                        <td>' + (feature.properties['Gambar'] !== null ? '<img style = "height : 300px; width : 300px" src="images/' + String(feature.properties['Gambar']).replace(/[\\\/:]/g, '_').trim() + '">' : '') + '</td>\
                     </tr>\
                 </table>';
             layer.bindPopup(popupContent, {maxWidth: "auto",maxWeight:"auto"});
@@ -141,10 +142,10 @@
             });
             var popupContent = '<table>\
                     <tr>\
-                        <td colspan=2 colspan="2">' + (feature.properties['UPT TIK'] !== null ? autolinker.link(feature.properties['UPT TIK'].toLocaleString()) : '') + '</td>\
+                        <td colspan="2">' + (feature.properties['UPT TIK'] !== null ? autolinker.link(feature.properties['UPT TIK'].toLocaleString()) : '') + '</td>\
                     </tr>\
                 </table>';
-            layer.bindPopup(popupContent, {maxWidth: "auto"});
+            layer.bindPopup(popupContent, {maxWidth: "auto",maxWeight:"auto"});
         }
 
         function style_UPTTIK_2_0() {
@@ -187,27 +188,27 @@
             });
             var popupContent = '<table>\
                     <tr>\
-                        <th scope="row">Fakultas</th>\
-                        <td colspan=2>' + (feature.properties['Fakultas'] !== null ? autolinker.link(feature.properties['Fakultas'].toLocaleString()) : '') + '</td>\
+                        <th scope="row">Name</th>\
+                        <td>' + (feature.properties['Name'] !== null ? autolinker.link(feature.properties['Name'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
                         <th scope="row">Alamat</th>\
-                        <td colspan=2>' + (feature.properties['Alamat'] !== null ? autolinker.link(feature.properties['Alamat'].toLocaleString()) : '') + '</td>\
+                        <td>' + (feature.properties['Alamat'] !== null ? autolinker.link(feature.properties['Alamat'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">Telp</th>\
+                        <td>' + (feature.properties['No. Telp'] !== null ? autolinker.link(feature.properties['No. Telp'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
                         <th scope="row">Web</th>\
-                        <td colspan=2>' + (feature.properties['Web'] !== null ? autolinker.link(feature.properties['Web'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <th scope="row">No. Telp</th>\
-                        <td colspan=2>' + (feature.properties['No. Telp'] !== null ? autolinker.link(feature.properties['No. Telp'].toLocaleString()) : '') + '</td>\
+                        <td>' + (feature.properties['Web'] !== null ? autolinker.link(feature.properties['Web'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
                         <th scope="row">Gambar</th>\
-                        <td colspan=2>' + (feature.properties['Gambar'] !== null ? '<img style = "height : 300px; width : 300px"  src="images/' + String(feature.properties['Gambar']).replace(/[\\\/:]/g, '_').trim() + '">' : '') + '</td>\
+                        <td>' + (feature.properties['Gambar'] !== null ? '<img style = "height : 300px; width : 300px"  src="images/' + String(feature.properties['Gambar']).replace(/[\\\/:]/g, '_').trim() + '">' : '') + '</td>\
                     </tr>\
                 </table>';
-            layer.bindPopup(popupContent, {maxWidth: "auto"});
+            layer.bindPopup(popupContent, {maxWidth: "auto",maxWeight:"auto"});
         }
 
         function style_Fakultas_3_0(feature) {
@@ -359,10 +360,10 @@
             });
             var popupContent = '<table>\
                     <tr>\
-                        <td colspan=2 colspan="2">' + (feature.properties['Rektorat'] !== null ? autolinker.link(feature.properties['Rektorat'].toLocaleString()) : '') + '</td>\
+                        <td colspan="2">' + (feature.properties['Rektorat'] !== null ? autolinker.link(feature.properties['Rektorat'].toLocaleString()) : '') + '</td>\
                     </tr>\
                 </table>';
-            layer.bindPopup(popupContent, {maxWidth: "auto"});
+            layer.bindPopup(popupContent, {maxWidth: "auto",maxWeight:"auto"});
         }
 
         function style_Rektorat_4_0() {
@@ -405,10 +406,10 @@
             });
             var popupContent = '<table>\
                     <tr>\
-                        <td colspan=2 colspan="2">' + (feature.properties['Parkir'] !== null ? autolinker.link(feature.properties['Parkir'].toLocaleString()) : '') + '</td>\
+                        <td colspan="2">' + (feature.properties['Parkir'] !== null ? autolinker.link(feature.properties['Parkir'].toLocaleString()) : '') + '</td>\
                     </tr>\
                 </table>';
-            layer.bindPopup(popupContent, {maxWidth: "auto"});
+            layer.bindPopup(popupContent, {maxWidth: "auto",maxWeight:"auto"});
         }
 
         function style_Parkir_5_0() {
@@ -451,10 +452,10 @@
             });
             var popupContent = '<table>\
                     <tr>\
-                        <td colspan=2 colspan="2">' + (feature.properties['Perpustakaan'] !== null ? autolinker.link(feature.properties['Perpustakaan'].toLocaleString()) : '') + '</td>\
+                        <td colspan="2">' + (feature.properties['Perpustakaan'] !== null ? autolinker.link(feature.properties['Perpustakaan'].toLocaleString()) : '') + '</td>\
                     </tr>\
                 </table>';
-            layer.bindPopup(popupContent, {maxWidth: "auto"});
+            layer.bindPopup(popupContent, {maxWidth: "auto",maxWeight:"auto"});
         }
 
         function style_Perpustakaan_6_0() {
@@ -497,10 +498,10 @@
             });
             var popupContent = '<table>\
                     <tr>\
-                        <td colspan=2 colspan="2">' + (feature.properties['GSG'] !== null ? autolinker.link(feature.properties['GSG'].toLocaleString()) : '') + '</td>\
+                        <td colspan="2">' + (feature.properties['GSG'] !== null ? autolinker.link(feature.properties['GSG'].toLocaleString()) : '') + '</td>\
                     </tr>\
                 </table>';
-            layer.bindPopup(popupContent, {maxWidth: "auto"});
+            layer.bindPopup(popupContent, {maxWidth: "auto",maxWeight:"auto"});
         }
 
         function style_GedungSerbaGuna_7_0() {
@@ -543,10 +544,10 @@
             });
             var popupContent = '<table>\
                     <tr>\
-                        <td colspan=2 colspan="2">' + (feature.properties['Lapangan'] !== null ? autolinker.link(feature.properties['Lapangan'].toLocaleString()) : '') + '</td>\
+                        <td colspan="2">' + (feature.properties['Lapangan'] !== null ? autolinker.link(feature.properties['Lapangan'].toLocaleString()) : '') + '</td>\
                     </tr>\
                 </table>';
-            layer.bindPopup(popupContent, {maxWidth: "auto"});
+            layer.bindPopup(popupContent, {maxWidth: "auto",maxWeight:"auto"});
         }
 
         function style_Lapangan_8_0(feature) {
@@ -638,10 +639,10 @@
             });
             var popupContent = '<table>\
                     <tr>\
-                        <td colspan=2 colspan="2">' + (feature.properties['Kolam Renang'] !== null ? autolinker.link(feature.properties['Kolam Renang'].toLocaleString()) : '') + '</td>\
+                        <td colspan="2">' + (feature.properties['Kolam Renang'] !== null ? autolinker.link(feature.properties['Kolam Renang'].toLocaleString()) : '') + '</td>\
                     </tr>\
                 </table>';
-            layer.bindPopup(popupContent, {maxWidth: "auto"});
+            layer.bindPopup(popupContent, {maxWidth: "auto",maxWeight:"auto"});
         }
 
         function style_KolamRenang_9_0() {
@@ -684,10 +685,10 @@
             });
             var popupContent = '<table>\
                     <tr>\
-                        <td colspan=2 colspan="2">' + (feature.properties['Embung'] !== null ? autolinker.link(feature.properties['Embung'].toLocaleString()) : '') + '</td>\
+                        <td colspan="2">' + (feature.properties['Embung'] !== null ? autolinker.link(feature.properties['Embung'].toLocaleString()) : '') + '</td>\
                     </tr>\
                 </table>';
-            layer.bindPopup(popupContent, {maxWidth: "auto"});
+            layer.bindPopup(popupContent, {maxWidth: "auto",maxWeight:"auto"});
         }
 
         function style_Embung_10_0() {
@@ -730,10 +731,10 @@
             });
             var popupContent = '<table>\
                     <tr>\
-                        <td colspan=2 colspan="2">' + (feature.properties['Street'] !== null ? autolinker.link(feature.properties['Street'].toLocaleString()) : '') + '</td>\
+                        <td colspan="2">' + (feature.properties['Street'] !== null ? autolinker.link(feature.properties['Street'].toLocaleString()) : '') + '</td>\
                     </tr>\
                 </table>';
-            layer.bindPopup(popupContent, {maxWidth: "auto"});
+            layer.bindPopup(popupContent, {maxWidth: "auto",maxWeight:"auto"});
         }
 
         function style_Street_11_0() {
@@ -787,19 +788,19 @@
             });
             var popupContent = '<table>\
                     <tr>\
-                        <th scope="row">Nama : </th>\
-                        <td colspan=2>' + (feature.properties['Nama Objek'] !== null ? autolinker.link(feature.properties['Nama Objek'].toLocaleString()) : '') + '</td>\
+                        <th scope="row">Nama</th>\
+                        <td>' + (feature.properties['Nama Objek'] !== null ? autolinker.link(feature.properties['Nama Objek'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <th scope="row">Web : </th>\
-                        <td colspan=2>' + (feature.properties['Web'] !== null ? autolinker.link(feature.properties['Web'].toLocaleString()) : '') + '</td>\
+                        <th scope="row">Web</th>\
+                        <td>' + (feature.properties['Web'] !== null ? autolinker.link(feature.properties['Web'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
                         <th scope="row">Gambar</th>\
-                        <td colspan=2>' + (feature.properties['Gambar'] !== null ? '<img style = "height : 300px; width : 300px"  src="images/' + String(feature.properties['Gambar']).replace(/[\\\/:]/g, '_').trim() + '">' : '') + '</td>\
+                        <td>' + (feature.properties['Gambar'] !== null ? '<img style = "height : 300px; width : 300px"  src="images/' + String(feature.properties['Gambar']).replace(/[\\\/:]/g, '_').trim() + '">' : '') + '</td>\
                     </tr>\
                 </table>';
-            layer.bindPopup(popupContent, {maxWidth: "auto"});
+            layer.bindPopup(popupContent, {maxWidth: "auto",maxWeight:"auto"});
         }
 
         function style_Penanda_Lokasi_Unila_12_0() {
@@ -839,7 +840,7 @@
         bounds_group.addLayer(layer_Penanda_Lokasi_Unila_12);
         map.addLayer(layer_Penanda_Lokasi_Unila_12);
         var baseMaps = {};
-        L.control.layers(baseMaps,{'<img style = "height : 300px; width : 300px"  src="legend/Penanda_Lokasi_Unila_12.png" /> Penanda_Lokasi_Unila': layer_Penanda_Lokasi_Unila_12,'<img style = "height : 300px; width : 300px"  src="legend/Street_11.png" /> Street': layer_Street_11,'<img style = "height : 300px; width : 300px"  src="legend/Embung_10.png" /> Embung': layer_Embung_10,'<img style = "height : 300px; width : 300px"  src="legend/KolamRenang_9.png" /> Kolam Renang': layer_KolamRenang_9,'Lapangan<br /><table><tr><td colspan=2 style="text-align: center;"><img style = "height : 300px; width : 300px"  src="legend/Lapangan_8_Lapangan0.png" /></td><td colspan=2>Lapangan</td></tr><tr><td colspan=2 style="text-align: center;"><img style = "height : 300px; width : 300px"  src="legend/Lapangan_8_LapanganBasket1.png" /></td><td colspan=2>Lapangan Basket</td></tr><tr><td colspan=2 style="text-align: center;"><img style = "height : 300px; width : 300px"  src="legend/Lapangan_8_LapanganTenis2.png" /></td><td colspan=2>Lapangan Tenis</td></tr><tr><td colspan=2 style="text-align: center;"><img style = "height : 300px; width : 300px"  src="legend/Lapangan_8_3.png" /></td><td colspan=2></td></tr></table>': layer_Lapangan_8,'<img style = "height : 300px; width : 300px"  src="legend/GedungSerbaGuna_7.png" /> Gedung Serba Guna': layer_GedungSerbaGuna_7,'<img style = "height : 300px; width : 300px"  src="legend/Perpustakaan_6.png" /> Perpustakaan': layer_Perpustakaan_6,'<img style = "height : 300px; width : 300px"  src="legend/Parkir_5.png" /> Parkir': layer_Parkir_5,'<img style = "height : 300px; width : 300px"  src="legend/Rektorat_4.png" /> Rektorat': layer_Rektorat_4,'Fakultas<br /><table><tr><td colspan=2 style="text-align: center;"><img style = "height : 300px; width : 300px"  src="legend/Fakultas_3_FEB0.png" /></td><td colspan=2>FEB</td></tr><tr><td colspan=2 style="text-align: center;"><img style = "height : 300px; width : 300px"  src="legend/Fakultas_3_FH1.png" /></td><td colspan=2>FH</td></tr><tr><td colspan=2 style="text-align: center;"><img style = "height : 300px; width : 300px"  src="legend/Fakultas_3_FISIP2.png" /></td><td colspan=2>FISIP</td></tr><tr><td colspan=2 style="text-align: center;"><img style = "height : 300px; width : 300px"  src="legend/Fakultas_3_FK3.png" /></td><td colspan=2>FK</td></tr><tr><td colspan=2 style="text-align: center;"><img style = "height : 300px; width : 300px"  src="legend/Fakultas_3_FKIP4.png" /></td><td colspan=2>FKIP</td></tr><tr><td colspan=2 style="text-align: center;"><img style = "height : 300px; width : 300px"  src="legend/Fakultas_3_FMIPA5.png" /></td><td colspan=2>FMIPA</td></tr><tr><td colspan=2 style="text-align: center;"><img style = "height : 300px; width : 300px"  src="legend/Fakultas_3_FP6.png" /></td><td colspan=2>FP</td></tr><tr><td colspan=2 style="text-align: center;"><img style = "height : 300px; width : 300px"  src="legend/Fakultas_3_FT7.png" /></td><td colspan=2>FT</td></tr></table>': layer_Fakultas_3,'<img style = "height : 300px; width : 300px"  src="legend/UPTTIK_2.png" /> UPT TIK': layer_UPTTIK_2,'<img style = "height : 300px; width : 300px"  src="legend/UniversitasLampung_1.png" /> Universitas Lampung': layer_UniversitasLampung_1,"OSM Standard": layer_OSMStandard_0,}).addTo(map);
+        L.control.layers(baseMaps,{'<img src="legend/Penanda_Lokasi_Unila_12.png" /> Penanda_Lokasi_Unila': layer_Penanda_Lokasi_Unila_12,'<img src="legend/Street_11.png" /> Street': layer_Street_11,'<img src="legend/Embung_10.png" /> Embung': layer_Embung_10,'<img src="legend/KolamRenang_9.png" /> Kolam Renang': layer_KolamRenang_9,'Lapangan<br /><table><tr><td style="text-align: center;"><img src="legend/Lapangan_8_Lapangan0.png" /></td><td>Lapangan</td></tr><tr><td style="text-align: center;"><img src="legend/Lapangan_8_LapanganBasket1.png" /></td><td>Lapangan Basket</td></tr><tr><td style="text-align: center;"><img src="legend/Lapangan_8_LapanganTenis2.png" /></td><td>Lapangan Tenis</td></tr><tr><td style="text-align: center;"><img src="legend/Lapangan_8_3.png" /></td><td></td></tr></table>': layer_Lapangan_8,'<img src="legend/GedungSerbaGuna_7.png" /> Gedung Serba Guna': layer_GedungSerbaGuna_7,'<img src="legend/Perpustakaan_6.png" /> Perpustakaan': layer_Perpustakaan_6,'<img src="legend/Parkir_5.png" /> Parkir': layer_Parkir_5,'<img src="legend/Rektorat_4.png" /> Rektorat': layer_Rektorat_4,'Fakultas<br /><table><tr><td style="text-align: center;"><img src="legend/Fakultas_3_FEB0.png" /></td><td>FEB</td></tr><tr><td style="text-align: center;"><img src="legend/Fakultas_3_FH1.png" /></td><td>FH</td></tr><tr><td style="text-align: center;"><img src="legend/Fakultas_3_FISIP2.png" /></td><td>FISIP</td></tr><tr><td style="text-align: center;"><img src="legend/Fakultas_3_FK3.png" /></td><td>FK</td></tr><tr><td style="text-align: center;"><img src="legend/Fakultas_3_FKIP4.png" /></td><td>FKIP</td></tr><tr><td style="text-align: center;"><img src="legend/Fakultas_3_FMIPA5.png" /></td><td>FMIPA</td></tr><tr><td style="text-align: center;"><img src="legend/Fakultas_3_FP6.png" /></td><td>FP</td></tr><tr><td style="text-align: center;"><img src="legend/Fakultas_3_FT7.png" /></td><td>FT</td></tr></table>': layer_Fakultas_3,'<img src="legend/UPTTIK_2.png" /> UPT TIK': layer_UPTTIK_2,'<img src="legend/UniversitasLampung_1.png" /> Universitas Lampung': layer_UniversitasLampung_1,"OSM Standard": layer_OSMStandard_0,}).addTo(map);
         setBounds();
         var i = 0;
         layer_UniversitasLampung_1.eachLayer(function(layer) {
